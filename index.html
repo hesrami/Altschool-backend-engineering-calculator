@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALT/SOE/025/1038 CALCULATOR APP</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <script src="/assets/script.js"></script>
+  </head>
+  <body>
+    <h1>ALT/SOE/025/1038 Calculator App</h1>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display" />
+          </div>
+
+          <!--first row buttons-->
+          <div>
+            <input type="button" value="1" />
+            <input type="button" value="2" />
+            <input type="button" value="3" />
+            <input type="button" value="x" class="operator" />
+            <input type="button" value="/" class="operator" />
+          </div>
+
+          <!-- second row buttons-->
+          <div>
+            <input type="button" value="4" />
+            <input type="button" value="5" />
+            <input type="button" value="6" />
+            <input type="button" value="+" class="operator" />
+            <input type="button" value="-" class="operator" />
+          </div>
+
+          <!-- third row buttons-->
+          <div>
+            <input type="button" value="7" />
+            <input type="button" value="8" />
+            <input type="button" value="9" />
+            <input type="button" value="%" class="operator" />
+            <input type="button" value="^" class="operator" />
+          </div>
+
+          <!-- fourth row buttons-->
+          <div>
+            <input type="button" value="." />
+            <input type="button" value="0" />
+            <input type="button" value="DEL" />
+            <input type="button" value="CE" />
+            <input type="button" value="=" class="equals" />
+          </div>
+          <!-- history section -->
+          <div class="history">
+            <h2>History</h2>
+            <ul id="historyList">
+              <!-- previous expressions will add themselves here -->
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

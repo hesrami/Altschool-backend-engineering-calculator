@@ -1,0 +1,77 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    display: flex;
+    align-items: center; /*moves it to center but left*/
+    justify-content: center; /*used this to center it*/
+}
+
+.calculator{
+    background-color: #242530;
+    padding: 20px; /*space elements then color the whole calc over the background*/
+}
+
+.calculator form input{  /*button modifications*/
+    border: 0;  /*strip the borders off the buttons*/
+    outline: 0;
+    width: 60px; 
+    height: 40px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: #404258;  /*button colors*/
+    font-size: 18px;
+    color: #fff; /*white font color*/
+    cursor: pointer;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 28px;
+    box-shadow: none;
+    background-color: #3a3f77;
+    height: 65px;
+}
+
+form input.operator{
+    background-color: #f49d1a;
+
+}
+
+form input.equals{
+    background-color: #b2b2b2;
+}
+
+.history {
+  margin-top: 20px;
+  padding: 10px;
+  background: #4A4E79;
+  color: #FFFFFF;
+  border-radius: 12px;
+
+  max-height: 30px;      /* controls visible area */
+  overflow-y: auto;      /* enable scrollbar when content overflows */
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history ul li {
+  padding: 5px 10px;
+  border-bottom: 1px solid #fff;
+}
